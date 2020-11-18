@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html> <head> <body> <table> <div>
-  <style>
-  body {background-color: powderblue;}
-  h1   {color: blue;}
-  p    {color: red;}
-  </style>
+<html> <head>
+  <link href="main.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
 <center>
-  Welcome to gamerville
+  <div class="header">
+  <h1>Gamer Ville</h1>
+  <p>The Land of Legends</p>
+  </div>
 </center>
+
+<audio id="40oz.mp3">
+  <source src="40oz.mp3" type="audio/mp3" />
+</audio>
+
+<script>
+let song = document.getElementById("40oz.mp3");
+document.addEventListener("load", function() {
+  song.play();
+});
+</script>
+
 Example of a gamer:
 <a href="https://www.youtube.com/watch?v=d6gBu2Zd7Bc">Link</a>
 <br>
 Gamer theme song:
 <a href="https://www.youtube.com/watch?v=q88ORgFtfOE">Link</a>
+
+<button name="Play A Game" type="submit" id="play_button" value="HTML">Play A Game</button>
+<br>
+<br>
+<a href="<a href="https://www.youtube.com/watch?v=d6gBu2Zd7Bc">Link</a>">Tech Spec</a>
+<div id="game_content"></div>
 </body>
+
+<script src="main.js"></script>
+</html>
